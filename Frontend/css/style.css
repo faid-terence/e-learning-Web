@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #010101;
+    font-family: "Ubuntu", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #1a1a1a;
+    align-items: center;
+    padding: 20px 40px;
+}
+.navbar .logo i {
+    color: #0aa5ff;
+    font-size: 22px;
+}
+.navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.menu-links{
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+.menu-links a{
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+}
+.menu-links a:hover{
+    color: white;
+
+}
+.log-in{
+    font-weight: 500;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;   
+}
+.log-in:hover{
+    color: white;
+    background-color: #0aa5ff;
+}
+.menu-btn {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+.content h1{
+    color: #191e24;
+}
+footer{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+}
+footer h2,
+footer h3{
+    padding: 8px 0;
+}
+footer li,
+footer p{
+    color: lightgray;
+    line-height: 27px;
+    font-weight: 300;
+}
+footer a {
+    color: lightgray;
+}
+footer li::marker{
+    color: #0aa5ff;
+    content: ;
+}
+.footer-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content-columns{
+    width: 250px;
+    list-style-position: inside;
+    margin: 5px;
+    padding: 10px;
+}
+.col-1 i{
+    color: #0aa5ff;
+    margin-right: 5px;
+}
+.col-1 li::marker{
+    content: '';
+}
+.search-input{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer input{
+    border: none!important;
+    padding: 13px;
+    width: 100%;
+    outline: none;
+}
+footer input[type='email'] {
+    background-color: white;
+    color: black;
+    border-radius: 20px 0 0 20px;
+}
+footer input[type='button']
+{
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+.col-4-content p{
+    margin-bottom: 12px;
+}
+.social-links{
+    padding: 10px;
+    font-size: large;
+    color: gray;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 53rem) {
+    .menu{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .content-columns{
+        width: 100%;
+    }
+}
